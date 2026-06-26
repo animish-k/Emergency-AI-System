@@ -1,14 +1,16 @@
 from datetime import datetime
 
-from backend.agents.datacollection.weather import WeatherCollector
+from services.weather_service import WeatherService
+
 from agents.datacollection.sensors import SensorCollector
 from agents.datacollection.socials import SocialCollector
+
 
 class DataCollectionAgent:
 
     def __init__(self):
 
-        self.weather = WeatherCollector()
+        self.weather = WeatherService()
 
         self.sensor = SensorCollector()
 
@@ -20,11 +22,17 @@ class DataCollectionAgent:
         disaster_type
     ):
 
-        weather_data = self.weather.get_weather(location)
+        weather_data = self.weather.get_weather(
+            location
+        )
 
-        sensor_data = self.sensor.get_sensor_data(location)
+        sensor_data = self.sensor.get_sensor_data(
+            location
+        )
 
-        social_data = self.social.get_social_reports(location)
+        social_data = self.social.get_social_reports(
+            location
+        )
 
         final_data = {
 
@@ -37,6 +45,7 @@ class DataCollectionAgent:
             **sensor_data,
 
             **social_data,
+
 
             "emergency_calls": 120,
 
