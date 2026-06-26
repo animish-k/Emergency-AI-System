@@ -7,12 +7,16 @@ from agents.datacollection.collector import (
 from agents.damage_assesment.predictor import (
     DamageAssessmentAgent
 )
-
+from agents.resource_allocation.resource_agent import (
+    ResourceAllocationAgent
+)
 router = APIRouter()
 
 collector = DataCollectionAgent()
 
 damage_agent = DamageAssessmentAgent()
+
+resource_agent = ResourceAllocationAgent()
 
 @router.get("/weather")
 def get_weather(location: str = "Chennai"):
@@ -57,11 +61,14 @@ def run_pipeline(payload: dict):
     )
 
     result = damage_agent.assess(data)
-
+    resources = resource_agent.allocate(result)
     return {
         "input": data,
-        "assessment": result
+        "assessment": result,
+        "resources": resources
     }
+
+
 from services.peoplesense_service import (
     PeopleSenseService
 )
