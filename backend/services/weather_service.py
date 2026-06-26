@@ -30,6 +30,18 @@ class WeatherService:
 
         data = response.json()
 
+        if response.status_code != 200 or "main" not in data:
+            print("Weather API Error:", data)
+
+            return {
+                "temperature": 30,
+                "humidity": 70,
+                "pressure": 1000,
+                "wind_speed": 0,
+                "weather": "Unknown",
+                "rainfall": 0
+            }
+        
         rainfall=0
         if "rain" in data:
             rainfall= data["rain"].get("1h", 0)
