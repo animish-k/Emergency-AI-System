@@ -28,8 +28,9 @@ class DataCollectionAgent:
         earthquake = self.usgs.get_latest_earthquake()
 
         weather_data = self.weather.get_weather(
-            location
-        )
+    earthquake["latitude"],
+    earthquake["longitude"]
+)
 
         sensor_data = self.sensor.get_sensor_data(
             location

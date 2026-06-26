@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+
 class WeatherService:
 
     def __init__(self):
@@ -12,16 +13,17 @@ class WeatherService:
         self.api_key = os.getenv(
             "OPENWEATHER_API_KEY"
         )
-        
 
     def get_weather(
         self,
-        location
+        latitude,
+        longitude
     ):
 
         url = (
             "https://api.openweathermap.org/data/2.5/weather"
-            f"?q={location}"
+            f"?lat={latitude}"
+            f"&lon={longitude}"
             f"&appid={self.api_key}"
             "&units=metric"
         )
@@ -30,9 +32,14 @@ class WeatherService:
 
         data = response.json()
 
-        rainfall=0
+        rainfall = 0
+
         if "rain" in data:
-            rainfall= data["rain"].get("1h", 0)
+
+            rainfall = data["rain"].get(
+                "1h",
+                0
+            )
 
         return {
 
