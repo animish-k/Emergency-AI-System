@@ -1,0 +1,45 @@
+{
+  "agent": "MultilingualCAPAgent",
+  "version": "1.0",
+  "generated_at": "2026-06-26T15:39:13.208429Z",
+  "alert_id": "IND-NDMA-2026-FLOOD-CHN-001",
+  "event": "Flood",
+  "severity": "Extreme",
+  "urgency": "Immediate",
+  "certainty": "Observed",
+  "area": "Chennai District, Tamil Nadu — Velachery, Adyar, Anna Nagar, Tambaram",
+  "sender": "ndma@gov.in",
+  "sent": "2026-06-25T19:39:44+05:30",
+  "parameters": {
+    "Rainfall": "120",
+    "Temperature": "29",
+    "SocialReports": "340",
+    "EmergencyCalls": "120",
+    "AffectedPopulation": "50000",
+    "DamageScore": "92",
+    "RescueTeams": "50",
+    "Ambulances": "10",
+    "MedicalUnits": "5",
+    "FoodPackets": "50000"
+  },
+  "messages": {
+    "en": {
+      "headline": "EXTREME FLOOD WARNING — Immediate Evacuation Required in Chennai",
+      "description": "Catastrophic flooding has been confirmed across multiple districts of Chennai following 72 hours of continuous heavy rainfall (120mm recorded). The Adyar and Cooum rivers have breached their banks. Water levels have risen to 9.2 metres, far exceeding the danger mark of 6.5 metres. Approximately 50,000 residents across Velachery, Adyar, Anna Nagar, and Tambaram are directly affected. Damage score: 92/100. Three bridges have been submerged. 18 NDRF rescue boats and 50 rescue teams are currently deployed. 10 ambulances and 5 medical units are on standby. 50,000 food packets are being distributed. Rainfall expected for 18–24 more hours.",
+      "instruction": "ALL RESIDENTS IN AFFECTED ZONES MUST EVACUATE IMMEDIATELY. Do NOT attempt to cross flooded roads, bridges, or underpasses. Proceed to the nearest relief shelter by foot or rescue boat. Relief shelters: (1) Shelter A — Sri Ramachandra College, Porur (capacity 3000); (2) Shelter C — Zonal Office Ground, Velachery (capacity 1800). Carry only essential medicines, ID documents, and drinking water. Call 112 for emergency rescue. Helpline: 1800-425-1213 (Toll Free). Do NOT use electrical appliances. Do NOT enter basement areas.",
+      "sms": "Chennai Flood: Extreme danger. Evacuate Velachery, Adyar, Anna Nagar, Tambaram IMMEDIATELY. Avoid flooded areas. Reach relief shelters. Call 112."
+    },
+    "hi": {
+      "headline": "चरम बाढ़ चेतावनी — चेन्नई में तत्काल निकासी आवश्यक",
+      "description": "72 घंटे की लगातार भारी बारिश (120 मिमी दर्ज) के बाद चेन्नई के कई जिलों में विनाशकारी बाढ़ की पुष्टि हुई है। अड्यार और कौम नदियाँ अपने किनारों को तोड़ चुकी हैं। जल स्तर 9.2 मीटर तक बढ़ गया है, जो 6.5 मीटर के खतरे के निशान से कहीं अधिक है। वेलाचेरी, अड्यार, अन्ना नगर और ताम्बरम में लगभग 50,000 निवासी सीधे प्रभावित हैं। क्षति स्कोर: 92/100। तीन पुल डूब गए हैं। 18 एनडीआरएफ बचाव नौकाएं और 50 बचाव दल वर्तमान में तैनात हैं। 10 एम्बुलेंस और 5 चिकित्सा इकाइयां स्टैंडबाय पर हैं। 50,000 खाद्य पैकेट वितरित किए जा रहे हैं। अगले 18-24 घंटों तक बारिश की उम्मीद है।",
+      "instruction": "प्रभावित क्षेत्रों के सभी निवासियों को तत्काल खाली करना होगा। बाढ़ वाली सड़कों, पुलों या अंडरपास को पार करने का प्रयास न करें। पैदल या बचाव नौका द्वारा निकटतम राहत आश्रय तक पहुंचें। राहत आश्रय: (1) आश्रय ए — श्री रामचंद्र कॉलेज, पोरूर (क्षमता 3000); (2) आश्रय सी — जोनल ऑफिस ग्राउंड, वेलाचेरी (क्षमता 1800)। केवल आवश्यक दवाएं, आईडी दस्तावेज और पीने का पानी साथ ले जाएं। आपातकालीन बचाव के लिए 112 पर कॉल करें। हेल्पलाइन: 1800-425-1213 (टोल फ्री)। बिजली के उपकरणों का उपयोग न करें। बेसमेंट क्षेत्रों में प्रवेश न करें।",
+      "sms": "चेन्नई बाढ़: अत्यधिक खतरा। वेलाचेरी, अड्यार, अन्ना नगर, ताम्बरम से तत्काल खाली करें। बाढ़ वाले क्षेत्रों से बचें। राहत आश्रयों तक पहुंचें। 112 पर कॉल करें।"
+    },
+    "ta": {
+      "headline": "தீவிர வெள்ள எச்சரிக்கை — சென்னையில் உடனடி வெளியேற்றம் தேவை",
+      "description": "72 மணிநேர தொடர்ச்சியான கனமழைக்கு (120 மிமீ பதிவு செய்யப்பட்டுள்ளது) பிறகு சென்னையில் பல மாவட்டங்களில் பேரழிவு தரும் வெள்ளம் உறுதி செய்யப்பட்டுள்ளது. அடையாறு மற்றும் கூவம் ஆறுகள் தங்கள் கரைகளை மீறி பாய்ந்துள்ளன. நீர் மட்டம் 9.2 மீட்டராக உயர்ந்துள்ளது, இது 6.5 மீட்டரின் அபாய அளவை விட மிக அதிகம். வேளச்சேரி, அடையாறு, அண்ணா நகர் மற்றும் தாம்பரம் முழுவதும் சுமார் 50,000 குடியிருப்பாளர்கள் நேரடியாக பாதிக்கப்பட்டுள்ளனர். சேத மதிப்பெண்: 92/100. மூன்று பாலங்கள் மூழ்கியுள்ளன. 18 NDRF மீட்பு படகுகள் மற்றும் 50 மீட்புக் குழுக்கள் தற்போது நிறுத்தப்பட்டுள்ளன. 10 ஆம்புலன்ஸ்கள் மற்றும் 5 மருத்துவ அலகுகள் தயார் நிலையில் உள்ளன. 50,000 உணவுப் பொட்டலங்கள் விநியோகிக்கப்படுகின்றன. அடுத்த 18-24 மணிநேரங்களுக்கு மழை எதிர்பார்க்கப்படுகிறது.",
+      "instruction": "பாதிக்கப்பட்ட பகுதிகளில் உள்ள அனைத்து குடியிருப்பாளர்களும் உடனடியாக வெளியேற வேண்டும். வெள்ளத்தில் மூழ்கிய சாலைகள், பாலங்கள் அல்லது சுரங்கப்பாதைகளை கடக்க முயற்சிக்க வேண்டாம். கால்நடையாகவோ அல்லது மீட்பு படகு மூலமாகவோ அருகிலுள்ள நிவாரண முகாமிற்கு செல்லவும். நிவாரண முகாம்கள்: (1) முகாம் ஏ — ஸ்ரீ ராமச்சந்திரா கல்லூரி, போரூர் (திறன் 3000); (2) முகாம் சி — மண்டல அலுவலக மைதானம், வேளச்சேரி (திறன் 1800). அத்தியாவசிய மருந்துகள், அடையாள ஆவணங்கள் மற்றும் குடிநீர் ஆகியவற்றை மட்டுமே எடுத்துச் செல்லவும். அவசர மீட்புக்கு 112 ஐ அழைக்கவும். உதவி எண்: 1800-425-1213 (கட்டணமில்லா). மின் சாதனங்களைப் பயன்படுத்த வேண்டாம். அடித்தளப் பகுதிகளுக்குள் நுழைய வேண்டாம்.",
+      "sms": "சென்னை வெள்ளம்: தீவிர ஆபத்து. வேளச்சேரி, அடையாறு, அண்ணா நகர், தாம்பரம் உடனடியாக வெளியேறவும். வெள்ளம் பாதித்த பகுதிகளை தவிர்க்கவும். நிவாரண முகாம்களை அடையவும். 112 ஐ அழைக்கவும்."
+    }
+  }
+}
