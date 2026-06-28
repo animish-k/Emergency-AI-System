@@ -10,6 +10,9 @@ from agents.damage_assesment.predictor import (
 from agents.resource_allocation.resource_agent import (
     ResourceAllocationAgent
 )
+from agents.route_planning.route_agent import (
+    RoutePlanningAgent
+)
 router = APIRouter()
 
 collector = DataCollectionAgent()
@@ -17,6 +20,7 @@ collector = DataCollectionAgent()
 damage_agent = DamageAssessmentAgent()
 
 resource_agent = ResourceAllocationAgent()
+route_agent = RoutePlanningAgent()
 
 @router.get("/weather")
 def get_weather(location: str = "Chennai"):
@@ -56,16 +60,30 @@ def run_pipeline(payload: dict):
     )
 
     data = collector.collect(
-        location,
-        disaster_type
-    )
+    location,
+    disaster_type
+)
+
+    print("\n========== AGENT 1 ==========")
+    print(data)
+    print("=============================\n")
 
     result = damage_agent.assess(data)
     resources = resource_agent.allocate(result)
+    route = route_agent.plan_route(
+
+    data,
+
+    result,
+
+    resources
+
+)
     return {
         "input": data,
         "assessment": result,
-        "resources": resources
+        "resources": resources,
+        "route": route
     }
 
 
