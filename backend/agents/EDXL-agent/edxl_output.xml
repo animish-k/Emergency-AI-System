@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<EDXLDistribution xmlns="urn:oasis:names:tc:emergency:EDXL:DE:1.0">
+    <distributionID>MSG-2026-06-26-2026</distributionID>
+    <senderID>operations.disaster.management@gov.in</senderID>
+    <dateTimeSent>2026-06-26T20:26:52.963707+05:30</dateTimeSent>
+    <distributionStatus>Actual</distributionStatus>
+    <distributionType>Report</distributionType>
+    <combinedKeywords>
+        <keyword>Flood</keyword>
+        <keyword>Extreme Severity</keyword>
+        <keyword>Resource Allocation</keyword>
+    </combinedKeywords>
+    <explicitAddress>
+        <explicitAddressScheme>AgencyID</explicitAddressScheme>
+        <explicitAddressValue>NDRF_HQ, Local_Hospitals, Civil_Defense</explicitAddressValue>
+    </explicitAddress>
+    <contentObject>
+        <contentDescription>Resource Deployment and Situation Report for Chennai Flood</contentDescription>
+        <xmlContent>
+            <ResourceMessage xmlns="urn:oasis:names:tc:emergency:EDXL:RM:1.0">
+                <IncidentInformation>
+                    <IncidentDescription>Flood incident in Chennai triggered by 120mm rainfall. Risk level: Critical.</IncidentDescription>
+                    <IncidentLocation>Chennai</IncidentLocation>
+                    <Severity>Extreme</Severity>
+                    <DamageScore>92</DamageScore>
+                    <AffectedPopulation>50000</AffectedPopulation>
+                </IncidentInformation>
+                <ResourceDeployment>
+                    <Resource>
+                        <Type>Rescue Team</Type>
+                        <Quantity>50</Quantity>
+                    </Resource>
+                    <Resource>
+                        <Type>Ambulance</Type>
+                        <Quantity>10</Quantity>
+                    </Resource>
+                    <Resource>
+                        <Type>Medical Unit</Type>
+                        <Quantity>5</Quantity>
+                    </Resource>
+                    <Resource>
+                        <Type>Food Packet</Type>
+                        <Quantity>50000</Quantity>
+                    </Resource>
+                </ResourceDeployment>
+                <LogisticsInformation>
+                    <EvacuationRoutes>
+                        <Route>Shelter A</Route>
+                        <Route>Shelter C</Route>
+                    </EvacuationRoutes>
+                </LogisticsInformation>
+            </ResourceMessage>
+        </xmlContent>
+    </contentObject>
+</EDXLDistribution>

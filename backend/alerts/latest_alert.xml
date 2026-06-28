@@ -1,0 +1,113 @@
+<?xml version="1.0" ?>
+<alert>
+    <identifier>2c63d4a4-1176-4c73-866f-211385152974</identifier>
+    <sender>emergency-ai@gov.in</sender>
+    <sent>2026-06-26T16:13:37.121804</sent>
+    <status>Actual</status>
+    <msgType>Alert</msgType>
+    <scope>Public</scope>
+    <info>
+        <category>Met</category>
+        <event>Flood</event>
+        <urgency>Immediate</urgency>
+        <severity>Extreme</severity>
+        <certainty>Observed</certainty>
+        <headline>Flood Alert | Severity: Extreme | 58 km S of Boca de Yuma, Dominican Republic</headline>
+        <description>
+        Disaster Type: Flood
+
+        Location: 58 km S of Boca de Yuma, Dominican Republic
+
+        Severity: Extreme
+
+        Damage Score: 85.0
+
+        Estimated Affected Population: 46750
+
+        Weather Conditions:
+        - Weather: Unknown
+        - Temperature: 30 °C
+        - Humidity: 70 %
+        - Pressure: 1000 hPa
+        - Wind Speed: 0 m/s
+        - Rainfall: 0 mm
+
+        Water Level:
+        8.5 m
+
+        Social Reports:
+        340
+
+        Emergency Calls:
+        120
+        </description>
+        <parameter>
+            <valueName>EarthquakeMagnitude</valueName>
+            <value>5</value>
+        </parameter>
+        <parameter>
+            <valueName>EarthquakeDepth</valueName>
+            <value>71.3</value>
+        </parameter>
+        <parameter>
+            <valueName>Latitude</valueName>
+            <value>17.858</value>
+        </parameter>
+        <parameter>
+            <valueName>Longitude</valueName>
+            <value>-68.536</value>
+        </parameter>
+        <parameter>
+            <valueName>Temperature</valueName>
+            <value>30</value>
+        </parameter>
+        <parameter>
+            <valueName>Humidity</valueName>
+            <value>70</value>
+        </parameter>
+        <parameter>
+            <valueName>Pressure</valueName>
+            <value>1000</value>
+        </parameter>
+        <parameter>
+            <valueName>WindSpeed</valueName>
+            <value>0</value>
+        </parameter>
+        <parameter>
+            <valueName>Weather</valueName>
+            <value>Unknown</value>
+        </parameter>
+        <parameter>
+            <valueName>Rainfall</valueName>
+            <value>0</value>
+        </parameter>
+        <parameter>
+            <valueName>WaterLevel</valueName>
+            <value>8.5</value>
+        </parameter>
+        <parameter>
+            <valueName>SocialReports</valueName>
+            <value>340</value>
+        </parameter>
+        <parameter>
+            <valueName>EmergencyCalls</valueName>
+            <value>120</value>
+        </parameter>
+        <parameter>
+            <valueName>DamageScore</valueName>
+            <value>85.0</value>
+        </parameter>
+        <parameter>
+            <valueName>AffectedPopulation</valueName>
+            <value>46750</value>
+        </parameter>
+        <parameter>
+            <valueName>ImpactZones</valueName>
+            <value>[{'lat': 17.858, 'lng': -68.536, 'radius': 200000, 'risk': 'extreme'}, {'lat': 17.858, 'lng': -68.536, 'radius': 500000, 'risk': 'severe'}, {'lat': 17.858, 'lng': -68.536, 'radius': 800000, 'risk': 'moderate'}]</value>
+        </parameter>
+        <instruction>Immediate evacuation recommended. Follow directions issued by emergency authorities.</instruction>
+        <area>
+            <areaDesc>58 km S of Boca de Yuma, Dominican Republic</areaDesc>
+        </area>
+    </info>
+</alert>
